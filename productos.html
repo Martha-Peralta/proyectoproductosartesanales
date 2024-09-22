@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Marketplace de Productos Artesanales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 1rem;
+        }
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+        .filters {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Productos Artesanales</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Artesanos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="filters">
+            <h2>Filtros</h2>
+            <select name="categoria">
+                <option value="">Todas las categorías</option>
+                <option value="ceramica">Cerámica</option>
+                <option value="textil">Textil</option>
+                <option value="joyeria">Joyería</option>
+            </select>
+            <select name="precio">
+                <option value="">Todos los precios</option>
+                <option value="bajo">$0 - $50</option>
+                <option value="medio">$51 - $100</option>
+                <option value="alto">$101+</option>
+            </select>
+            <button>Aplicar filtros</button>
+        </section>
+        <section class="product-grid">
+            <div class="product-card">
+                <h3>Jarrón de Cerámica</h3>
+                <p>Hermoso jarrón hecho a mano.</p>
+                <p>Precio: $75</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Bufanda de Lana</h3>
+                <p>Suave bufanda tejida a mano.</p>
+                <p>Precio: $45</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h3>Collar de Plata</h3>
+                <p>Elegante collar artesanal.</p>
+                <p>Precio: $120</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <!-- Más productos aquí -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marketplace de Productos Artesanales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

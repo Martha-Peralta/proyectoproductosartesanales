@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Artesanos - Marketplace de Productos Artesanales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 1rem;
+        }
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .artisan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .artisan-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+        .artisan-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestros Talentosos Artesanos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="artesanos.html">Artesanos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Conoce a los Creadores</h2>
+            <p>Descubre las historias y habilidades únicas detrás de nuestros productos artesanales.</p>
+        </section>
+        <section class="artisan-grid">
+            <div class="artisan-card">
+                <img src="/api/placeholder/150/150" alt="María González" class="artisan-photo">
+                <h3>María González</h3>
+                <p>Especialidad: Cerámica</p>
+                <p>María crea hermosas piezas de cerámica inspiradas en la naturaleza.</p>
+                <button>Ver productos</button>
+            </div>
+            <div class="artisan-card">
+                <img src="/api/placeholder/150/150" alt="Juan Pérez" class="artisan-photo">
+                <h3>Juan Pérez</h3>
+                <p>Especialidad: Textiles</p>
+                <p>Juan teje increíbles tapices y alfombras usando técnicas tradicionales.</p>
+                <button>Ver productos</button>
+            </div>
+            <div class="artisan-card">
+                <img src="/api/placeholder/150/150" alt="Ana Rodríguez" class="artisan-photo">
+                <h3>Ana Rodríguez</h3>
+                <p>Especialidad: Joyería</p>
+                <p>Ana crea joyería única combinando metales preciosos y piedras locales.</p>
+                <button>Ver productos</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marketplace de Productos Artesanales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

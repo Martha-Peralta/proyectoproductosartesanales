@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace de Productos Artesanales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 1rem;
+        }
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .featured-products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marketplace de Productos Artesanales</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Artesanos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Bienvenidos a nuestro Marketplace</h2>
+            <p>Descubre productos únicos hechos por talentosos artesanos locales.</p>
+        </section>
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="product-card">
+                <h3>Cerámica Pintada</h3>
+                <p>Hermosa cerámica pintada a mano.</p>
+                <button>Ver detalles</button>
+            </div>
+            <div class="product-card">
+                <h3>Tejido de Lana</h3>
+                <p>Suaves tejidos de lana natural.</p>
+                <button>Ver detalles</button>
+            </div>
+            <div class="product-card">
+                <h3>Joyería Artesanal</h3>
+                <p>Joyería única hecha a mano.</p>
+                <button>Ver detalles</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marketplace de Productos Artesanales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
